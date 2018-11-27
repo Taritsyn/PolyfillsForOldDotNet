@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Product>Polyfills for old .NET: System.Runtime.InteropServices.RuntimeInformation</Product>
+		<VersionPrefix>0.1.0</VersionPrefix>
+		<TargetFramework>net40-client</TargetFramework>
+		<OutputType>Library</OutputType>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Description>Contains polyfills for the `OSArchitecture` property and `IsOSPlatform` method of `RuntimeInformation` class from the System.Runtime.InteropServices.RuntimeInformation library.</Description>
+		<PackageTags>.NET DotNet Polyfill System.Runtime.InteropServices.RuntimeInformation</PackageTags>
+	</PropertyGroup>
+
+	<Import Project="../../build/common.props" />
+	<Import Project="../../build/net40-client-target.props" />
+	<Import Project="../../build/strong-name-signing.props" />
+	<Import Project="../../build/nuget-metadata.props" />
+
+	<ItemGroup>
+		<Content Include="../../Licenses/dotnet-corefx-license.txt">
+			<PackagePath>dotnet-corefx-license.txt</PackagePath>
+			<Pack>true</Pack>
+			<Visible>false</Visible>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Resources\Strings.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Strings.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Resources\Strings.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Strings.Designer.cs</LastGenOutput>
+			<CustomToolNamespace>PolyfillsForOldDotNet.System.Runtime.InteropServices.Resources</CustomToolNamespace>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>
