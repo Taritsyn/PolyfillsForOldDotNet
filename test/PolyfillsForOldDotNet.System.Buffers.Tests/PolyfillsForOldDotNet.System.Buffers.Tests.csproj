@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Product>Polyfills for old .NET: Tests for System.Buffers</Product>
+		<VersionPrefix>0.1.0</VersionPrefix>
+		<TargetFrameworks>net40</TargetFrameworks>
+		<OutputType>Library</OutputType>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<IsTestProject>true</IsTestProject>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+
+	<Import Project="../../build/common.props" />
+
+	<ItemGroup>
+		<PackageReference Include="NUnit" Version="3.11.0" />
+		<PackageReference Include="NUnit3TestAdapter" Version="3.11.2" />
+
+		<ProjectReference Include="../../src/PolyfillsForOldDotNet.System.Buffers/PolyfillsForOldDotNet.System.Buffers.csproj" />
+	</ItemGroup>
+
+</Project>

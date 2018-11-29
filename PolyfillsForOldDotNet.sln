@@ -5,9 +5,15 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8CEA7FD6-27A3-477D-AFE4-6AED72450DDA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolyfillsForOldDotNet.System.Buffers", "src\PolyfillsForOldDotNet.System.Buffers\PolyfillsForOldDotNet.System.Buffers.csproj", "{145626F4-FA59-423B-807D-AA61669D0588}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolyfillsForOldDotNet.System.Runtime.InteropServices.RuntimeInformation", "src\PolyfillsForOldDotNet.System.Runtime.InteropServices.RuntimeInformation\PolyfillsForOldDotNet.System.Runtime.InteropServices.RuntimeInformation.csproj", "{FA74AD50-5F8A-4B45-8862-25162347C40F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyfillsForOldDotNet.System.Threading", "src\PolyfillsForOldDotNet.System.Threading\PolyfillsForOldDotNet.System.Threading.csproj", "{C7C51BFB-B8E3-4F56-9005-A164315C611A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolyfillsForOldDotNet.System.Threading", "src\PolyfillsForOldDotNet.System.Threading\PolyfillsForOldDotNet.System.Threading.csproj", "{C7C51BFB-B8E3-4F56-9005-A164315C611A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9648049D-05D1-4777-A0A3-FBD5EC144EB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyfillsForOldDotNet.System.Buffers.Tests", "test\PolyfillsForOldDotNet.System.Buffers.Tests\PolyfillsForOldDotNet.System.Buffers.Tests.csproj", "{977A66CA-6500-4725-85D8-BEFEBA7AAF08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{145626F4-FA59-423B-807D-AA61669D0588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145626F4-FA59-423B-807D-AA61669D0588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145626F4-FA59-423B-807D-AA61669D0588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145626F4-FA59-423B-807D-AA61669D0588}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA74AD50-5F8A-4B45-8862-25162347C40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA74AD50-5F8A-4B45-8862-25162347C40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA74AD50-5F8A-4B45-8862-25162347C40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,13 +33,19 @@ Global
 		{C7C51BFB-B8E3-4F56-9005-A164315C611A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7C51BFB-B8E3-4F56-9005-A164315C611A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7C51BFB-B8E3-4F56-9005-A164315C611A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977A66CA-6500-4725-85D8-BEFEBA7AAF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977A66CA-6500-4725-85D8-BEFEBA7AAF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977A66CA-6500-4725-85D8-BEFEBA7AAF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977A66CA-6500-4725-85D8-BEFEBA7AAF08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{145626F4-FA59-423B-807D-AA61669D0588} = {8CEA7FD6-27A3-477D-AFE4-6AED72450DDA}
 		{FA74AD50-5F8A-4B45-8862-25162347C40F} = {8CEA7FD6-27A3-477D-AFE4-6AED72450DDA}
 		{C7C51BFB-B8E3-4F56-9005-A164315C611A} = {8CEA7FD6-27A3-477D-AFE4-6AED72450DDA}
+		{977A66CA-6500-4725-85D8-BEFEBA7AAF08} = {9648049D-05D1-4777-A0A3-FBD5EC144EB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A9CDBFC-6CB2-4BED-BEDD-A2F187F9E301}
