@@ -1,18 +1,16 @@
 ﻿using System;
 
-using PolyfillsForOldDotNet.System.Runtime.InteropServices.Utilities;
-
 namespace PolyfillsForOldDotNet.System.Runtime.InteropServices
 {
 	public static class RuntimeInformation
 	{
 		/// <summary>
-		/// Operating system platform
+		/// Operating system platform.
 		/// </summary>
 		private static OSPlatform _osPlatform;
 
 		/// <summary>
-		/// Operating system architecture
+		/// Operating system architecture.
 		/// </summary>
 		private static Architecture _osArch;
 
@@ -23,7 +21,7 @@ namespace PolyfillsForOldDotNet.System.Runtime.InteropServices
 
 
 		/// <summary>
-		/// Static constructor
+		/// Static constructor.
 		/// </summary>
 		static RuntimeInformation()
 		{
@@ -40,7 +38,7 @@ namespace PolyfillsForOldDotNet.System.Runtime.InteropServices
 			}
 			else if (platform == PlatformID.Unix)
 			{
-				string unixName = Utils.ReadProcessOutput("uname") ?? string.Empty;
+				string unixName = Utilities.ReadProcessOutput("uname") ?? string.Empty;
 				if (unixName.Contains("Darwin"))
 				{
 					_osPlatform = OSPlatform.OSX;

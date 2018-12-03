@@ -3,9 +3,9 @@ using System.Diagnostics;
 
 using PolyfillsForOldDotNet.System.Runtime.InteropServices.Resources;
 
-namespace PolyfillsForOldDotNet.System.Runtime.InteropServices.Utilities
+namespace PolyfillsForOldDotNet.System.Runtime.InteropServices
 {
-	internal static class Utils
+	internal static class Utilities
 	{
 		internal static string ReadProcessOutput(string fileName)
 		{

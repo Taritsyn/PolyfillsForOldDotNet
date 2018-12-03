@@ -18,10 +18,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		/// the computer, regardless of the number of processors or the state of processor cache.</returns>
 		public static bool Read(ref bool location)
 		{
-			bool flag = location;
+			bool result = location;
 			Thread.MemoryBarrier();
 
-			return flag;
+			return result;
 		}
 
 		/// <summary>
@@ -34,10 +34,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		/// the computer, regardless of the number of processors or the state of processor cache.</returns>
 		public static byte Read(ref byte location)
 		{
-			byte num = location;
+			byte result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -63,10 +63,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		/// the computer, regardless of the number of processors or the state of processor cache.</returns>
 		public static short Read(ref short location)
 		{
-			short num = location;
+			short result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -79,10 +79,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		/// the computer, regardless of the number of processors or the state of processor cache.</returns>
 		public static int Read(ref int location)
 		{
-			int num = location;
+			int result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -108,10 +108,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		/// the computer, regardless of the number of processors or the state of processor cache.</returns>
 		public static IntPtr Read(ref IntPtr location)
 		{
-			IntPtr num = location;
+			IntPtr result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -125,10 +125,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		[CLSCompliant(false)]
 		public static sbyte Read(ref sbyte location)
 		{
-			sbyte num = location;
+			sbyte result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -141,10 +141,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		/// the computer, regardless of the number of processors or the state of processor cache.</returns>
 		public static float Read(ref float location)
 		{
-			float num = location;
+			float result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -158,10 +158,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		[CLSCompliant(false)]
 		public static ushort Read(ref ushort location)
 		{
-			ushort num = location;
+			ushort result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -175,10 +175,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		[CLSCompliant(false)]
 		public static uint Read(ref uint location)
 		{
-			uint num = location;
+			uint result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -192,9 +192,9 @@ namespace PolyfillsForOldDotNet.System.Threading
 		[CLSCompliant(false)]
 		public static unsafe ulong Read(ref ulong location)
 		{
-			fixed (ulong* ptr = &location)
+			fixed (ulong* pLocation = &location)
 			{
-				return (ulong)Interlocked.CompareExchange(ref *(long*)ptr, 0L, 0L);
+				return (ulong)Interlocked.CompareExchange(ref *(long*)pLocation, 0L, 0L);
 			}
 		}
 
@@ -209,10 +209,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		[CLSCompliant(false)]
 		public static UIntPtr Read(ref UIntPtr location)
 		{
-			UIntPtr num = location;
+			UIntPtr result = location;
 			Thread.MemoryBarrier();
 
-			return num;
+			return result;
 		}
 
 		/// <summary>
@@ -227,10 +227,10 @@ namespace PolyfillsForOldDotNet.System.Threading
 		/// processor cache.</returns>
 		public static T Read<T>(ref T location) where T : class
 		{
-			T obj = location;
+			T result = location;
 			Thread.MemoryBarrier();
 
-			return obj;
+			return result;
 		}
 
 		/// <summary>
@@ -399,9 +399,9 @@ namespace PolyfillsForOldDotNet.System.Threading
 		[CLSCompliant(false)]
 		public static unsafe void Write(ref ulong location, ulong value)
 		{
-			fixed (ulong* ptr = &location)
+			fixed (ulong* pLocation = &location)
 			{
-				Interlocked.Exchange(ref *(long*)ptr, (long)value);
+				Interlocked.Exchange(ref *(long*)pLocation, (long)value);
 			}
 		}
 
