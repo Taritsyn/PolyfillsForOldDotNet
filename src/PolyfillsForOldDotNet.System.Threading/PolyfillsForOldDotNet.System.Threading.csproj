@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Product>Polyfills for old .NET: System.Threading</Product>
-		<VersionPrefix>0.1.0</VersionPrefix>
+		<VersionPrefix>0.1.1</VersionPrefix>
 		<TargetFramework>net40-client</TargetFramework>
 		<OutputType>Library</OutputType>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -11,6 +11,7 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Description>Contains polyfills for the `Volatile` class from the System.Threading library.</Description>
 		<PackageTags>.NET DotNet Polyfill System.Threading</PackageTags>
+		<PackageReleaseNotes>Added a link to the license.</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<Import Project="../../build/common.props" />

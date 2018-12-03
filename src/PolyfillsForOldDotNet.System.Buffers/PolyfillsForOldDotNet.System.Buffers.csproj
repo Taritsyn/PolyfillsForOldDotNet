@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Product>Polyfills for old .NET: System.Buffers</Product>
-		<VersionPrefix>0.1.0</VersionPrefix>
+		<VersionPrefix>0.1.1</VersionPrefix>
 		<TargetFramework>net40-client</TargetFramework>
 		<OutputType>Library</OutputType>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -10,6 +10,7 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Description>Implementation of the System.Buffers library without logging for .NET Framework 4.0.</Description>
 		<PackageTags>.NET DotNet Polyfill System.Buffers</PackageTags>
+		<PackageReleaseNotes>Added a link to the license.</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<Import Project="../../build/common.props" />
