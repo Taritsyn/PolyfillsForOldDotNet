@@ -19,7 +19,7 @@
   <PropertyGroup>
     <Description>Contains polyfills for the `Volatile` class from the System.Threading library.</Description>
     <PackageTags>$(PackageCommonTags);System.Threading</PackageTags>
-    <PackageReleaseNotes>Added a link to the license.</PackageReleaseNotes>
+    <PackageReleaseNotes>Enabled a SourceLink in NuGet package.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

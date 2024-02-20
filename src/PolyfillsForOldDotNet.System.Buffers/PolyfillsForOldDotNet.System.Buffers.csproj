@@ -18,7 +18,7 @@
   <PropertyGroup>
     <Description>Implementation of the System.Buffers library without logging for .NET Framework 4.0.</Description>
     <PackageTags>$(PackageCommonTags);System.Buffers</PackageTags>
-    <PackageReleaseNotes>Added a link to the license.</PackageReleaseNotes>
+    <PackageReleaseNotes>Enabled a SourceLink in NuGet package.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

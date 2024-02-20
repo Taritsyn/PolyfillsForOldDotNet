@@ -18,7 +18,7 @@
   <PropertyGroup>
     <Description>Contains polyfills for the `OSArchitecture` property and `IsOSPlatform` method of `RuntimeInformation` class from the System.Runtime.InteropServices.RuntimeInformation library.</Description>
     <PackageTags>$(PackageCommonTags);System.Runtime.InteropServices.RuntimeInformation</PackageTags>
-    <PackageReleaseNotes>Added a link to the license.</PackageReleaseNotes>
+    <PackageReleaseNotes>Enabled a SourceLink in NuGet package.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
