@@ -5,6 +5,7 @@
     <PackageCommonTags>.NET;DotNet;Polyfill</PackageCommonTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Taritsyn/PolyfillsForOldDotNet</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/Taritsyn/PolyfillsForOldDotNet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -16,6 +17,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="../../images/PolyfillsForOldDotNet_Logo_128x128.png">
+      <PackagePath>$(PackageIcon)</PackagePath>
+      <Pack>true</Pack>
+      <Visible>false</Visible>
+    </None>
     <None Include="../../LICENSE.txt">
       <PackagePath>/</PackagePath>
       <Pack>true</Pack>
