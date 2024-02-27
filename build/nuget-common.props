@@ -27,5 +27,15 @@
       <Pack>true</Pack>
       <Visible>false</Visible>
     </None>
+    <None Include="../../Licenses/dotnet-corefx-license.txt">
+      <PackagePath>/</PackagePath>
+      <Pack>true</Pack>
+      <Visible>false</Visible>
+    </None>
+
+    <Content Include="readme.txt">
+      <PackagePath>/</PackagePath>
+      <Pack>true</Pack>
+    </Content>
   </ItemGroup>
 </Project>

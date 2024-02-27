@@ -22,14 +22,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="../../Licenses/dotnet-corefx-license.txt">
-      <PackagePath>dotnet-corefx-license.txt</PackagePath>
-      <Pack>true</Pack>
-      <Visible>false</Visible>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Resources/Strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

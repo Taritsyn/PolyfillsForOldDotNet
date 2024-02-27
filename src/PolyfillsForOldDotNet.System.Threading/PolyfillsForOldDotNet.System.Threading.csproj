@@ -22,12 +22,4 @@
     <PackageReleaseNotes>Enabled a SourceLink in NuGet package.</PackageReleaseNotes>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Include="../../Licenses/dotnet-corefx-license.txt">
-      <PackagePath>dotnet-corefx-license.txt</PackagePath>
-      <Pack>true</Pack>
-      <Visible>false</Visible>
-    </Content>
-  </ItemGroup>
-
 </Project>
