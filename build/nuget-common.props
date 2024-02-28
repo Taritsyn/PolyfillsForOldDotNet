@@ -5,6 +5,7 @@
     <PackageCommonTags>.NET;DotNet;Polyfill</PackageCommonTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Taritsyn/PolyfillsForOldDotNet</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Taritsyn/PolyfillsForOldDotNet/master/images/PolyfillsForOldDotNet_Logo_128x128.png</PackageIconUrl>
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/Taritsyn/PolyfillsForOldDotNet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

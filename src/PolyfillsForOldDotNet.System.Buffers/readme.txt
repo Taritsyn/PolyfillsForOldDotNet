@@ -1,7 +1,7 @@
 ﻿
 
    --------------------------------------------------------------------------------
-             README file for Polyfills for old .NET: System.Buffers v0.1.1
+             README file for Polyfills for old .NET: System.Buffers v0.1.2
 
    --------------------------------------------------------------------------------
 

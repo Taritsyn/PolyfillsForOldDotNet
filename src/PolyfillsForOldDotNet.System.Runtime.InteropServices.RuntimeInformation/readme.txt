@@ -2,7 +2,7 @@
 
    --------------------------------------------------------------------------------
                         README file for Polyfills for old .NET:
-               System.Runtime.InteropServices.RuntimeInformation v0.1.1
+               System.Runtime.InteropServices.RuntimeInformation v0.1.2
 
    --------------------------------------------------------------------------------
 

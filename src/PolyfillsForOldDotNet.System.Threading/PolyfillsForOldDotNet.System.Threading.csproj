@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Product>Polyfills for old .NET: System.Threading</Product>
-    <VersionPrefix>0.1.1</VersionPrefix>
+    <VersionPrefix>0.1.2</VersionPrefix>
     <TargetFramework>net40-client</TargetFramework>
     <OutputType>Library</OutputType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
