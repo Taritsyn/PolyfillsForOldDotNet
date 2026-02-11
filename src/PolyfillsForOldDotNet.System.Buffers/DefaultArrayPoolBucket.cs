@@ -64,7 +64,7 @@ namespace PolyfillsForOldDotNet.System.Buffers
 					{
 						buffer = buffers[_index];
 						buffers[_index++] = null;
-						allocateBuffer = buffer == null;
+						allocateBuffer = buffer is null;
 					}
 				}
 				finally

@@ -17,7 +17,7 @@ namespace PolyfillsForOldDotNet.System.Runtime.InteropServices
 
 		private OSPlatform(string osPlatform)
 		{
-			if (osPlatform == null)
+			if (osPlatform is null)
 			{
 				throw new ArgumentNullException(nameof(osPlatform));
 			}
@@ -53,7 +53,7 @@ namespace PolyfillsForOldDotNet.System.Runtime.InteropServices
 
 		public override int GetHashCode()
 		{
-			return _osPlatform == null ? 0 : _osPlatform.GetHashCode();
+			return _osPlatform is null ? 0 : _osPlatform.GetHashCode();
 		}
 
 		public override string ToString()
