@@ -7,8 +7,6 @@ namespace PolyfillsForOldDotNet.System.Buffers.Tests
 	[TestFixture]
 	public class ArrayPoolUnitTests
 	{
-		private const int MaxEventWaitTimeoutInMs = 200;
-
 		private struct TestStruct
 		{
 			internal string InternalRef;

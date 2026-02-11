@@ -1,11 +1,11 @@
 ﻿
 
    --------------------------------------------------------------------------------
-             README file for Polyfills for old .NET: System.Buffers v0.1.2
+             README file for Polyfills for old .NET: System.Buffers v0.1.3
 
    --------------------------------------------------------------------------------
 
-           Copyright (c) 2018-2024 Andrey Taritsyn - http://www.taritsyn.ru
+           Copyright (c) 2018-2026 Andrey Taritsyn - http://www.taritsyn.ru
 
 
    ===========

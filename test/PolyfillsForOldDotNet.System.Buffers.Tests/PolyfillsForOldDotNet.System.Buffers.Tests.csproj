@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Product>Polyfills for old .NET: Tests for System.Buffers</Product>
-    <VersionPrefix>0.1.2</VersionPrefix>
+    <VersionPrefix>0.1.3</VersionPrefix>
     <TargetFrameworks>net40</TargetFrameworks>
     <OutputType>Library</OutputType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>

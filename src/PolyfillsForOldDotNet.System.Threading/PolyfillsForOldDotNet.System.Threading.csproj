@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Product>Polyfills for old .NET: System.Threading</Product>
-    <VersionPrefix>0.1.2</VersionPrefix>
+    <VersionPrefix>0.1.3</VersionPrefix>
     <TargetFramework>net40-client</TargetFramework>
     <OutputType>Library</OutputType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -19,7 +19,6 @@
   <PropertyGroup>
     <Description>Contains polyfills for the `Volatile` class from the System.Threading library.</Description>
     <PackageTags>$(PackageCommonTags);System.Threading</PackageTags>
-    <PackageReleaseNotes>Enabled a SourceLink in NuGet package.</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

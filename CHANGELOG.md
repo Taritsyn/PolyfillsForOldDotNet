@@ -1,6 +1,9 @@
 Change log
 ==========
 
+## v0.1.3 - February 11, 2026
+ * Performed a migration to the modern C# null/not-null checks
+
 ## v0.1.2 - February 28, 2024
  * Enabled a SourceLink in NuGet packages
 
