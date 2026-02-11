@@ -1,0 +1,30 @@
+﻿<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="CHANGELOG.md" />
+    <File Path="global.json" />
+    <File Path="LICENSE.txt" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/build/">
+    <File Path="build/common.props" />
+    <File Path="build/Key.snk" />
+    <File Path="build/net40-client-target.props" />
+    <File Path="build/nuget-common.props" />
+    <File Path="build/strong-name-signing.props" />
+  </Folder>
+  <Folder Name="/images/">
+    <File Path="images/PolyfillsForOldDotNet_Logo_128x128.png" />
+  </Folder>
+  <Folder Name="/licenses/">
+    <File Path="licenses/dotnet-corefx-license.txt" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/PolyfillsForOldDotNet.System.Buffers/PolyfillsForOldDotNet.System.Buffers.csproj" />
+    <Project Path="src/PolyfillsForOldDotNet.System.Runtime.InteropServices.RuntimeInformation/PolyfillsForOldDotNet.System.Runtime.InteropServices.RuntimeInformation.csproj" />
+    <Project Path="src/PolyfillsForOldDotNet.System.Threading/PolyfillsForOldDotNet.System.Threading.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/PolyfillsForOldDotNet.System.Buffers.Tests/PolyfillsForOldDotNet.System.Buffers.Tests.csproj" />
+  </Folder>
+</Solution>
